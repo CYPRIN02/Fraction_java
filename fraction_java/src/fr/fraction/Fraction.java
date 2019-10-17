@@ -4,8 +4,8 @@ public final class Fraction {
 	private int _denominateur;
 	private int _numerateur;
 
-	public static Fraction ZERO = new Fraction(0, 1);
-	public static Fraction UN = new Fraction(1, 1);
+	public static  Fraction ZERO = new Fraction(0, 1);
+	public static  Fraction UN = new Fraction(1, 1);
 
 	public Fraction(int numerateur, int denominateur) {
 		this._denominateur = denominateur;
