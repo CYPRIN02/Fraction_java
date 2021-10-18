@@ -29,7 +29,7 @@ public class Main {
 		System.out.println("Virgule flottante : " + create_f.virguleFlottante());
 		
 		System.out.println("To string : " + create_f.toString());
-		
+		 
 		System.out.println("Hashcode : " + create_f.hashCode());
 		
 		
