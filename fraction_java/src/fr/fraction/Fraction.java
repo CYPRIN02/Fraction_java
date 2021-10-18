@@ -1,5 +1,6 @@
 package fr.fraction;
 
+
 public final class Fraction {
 	private int _denominateur;
 	private int _numerateur;
@@ -44,6 +45,23 @@ public final class Fraction {
 		return this._numerateur + "/" + this._denominateur;
 
 	}
-
+	
+	  public Fraction add(Fraction aFraction) { 
+		  if(aFraction == ZERO) return this;
+		  int num = (this._numerateur * aFraction._denominateur ) + (this._denominateur * aFraction._numerateur);
+		  int den = (this._denominateur * aFraction._denominateur);
+		  Fraction result = new Fraction(num, den);
+	    return result;
+	  }
+	  
+	  @Override
+		public int hashCode() {
+			final int x = 17;
+			int result = 1;
+			result = x* result + (this._numerateur) / (this._denominateur);
+			
+			//result = 37* result.add(_denominator);
+			return result;
+		}
 	
 }
